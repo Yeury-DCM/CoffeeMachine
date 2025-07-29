@@ -8,8 +8,18 @@ namespace CoffeeMachine
 {
     public class CoffeeMaker
     {
-        public int CoffeeAmmount { get; set; }
+        public int coffeeAmmount;
 
+        public void SetCoffeeAmmount(int coffeeAmmount)
+        {
+            return;
+        }
+
+        public int getCoffeeAmmount()
+        {
+            return 0;
+        }
+      
         public bool hasCoffee(int coffeeAmmount)
         {
             return false;
