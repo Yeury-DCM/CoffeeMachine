@@ -23,5 +23,19 @@ namespace CoffeeMachine.Tests
             Assert.True(result);
         }
 
+        [Fact]
+        public void HasCups_ShouldReturnFals_WhenEnougCupsNoExist()
+        {
+            //Arrange
+            var smallCup = new Cup(2, 10);
+
+            //Act
+            bool result = smallCup.HasCups(3);
+
+            //Assert
+            Assert.False(result);
+        }
+
+
     }
 }
